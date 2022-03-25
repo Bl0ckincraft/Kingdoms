@@ -39,12 +39,12 @@ To work, this plugin need two others plugin :
 		    </repository>
 	    </repositories>
 ```
-> Finally, add this into the dependencies part and replace `%version%` by this number : [![](https://jitpack.io/v/Bl0ckincraft/Kingdoms.svg)](https://jitpack.io/#Bl0ckincraft/Kingdoms)
+> Finally, add this into the dependencies part and replace `%tag%` by this tag : [![](https://jitpack.io/v/Bl0ckincraft/Kingdoms.svg)](https://jitpack.io/#Bl0ckincraft/Kingdoms)
 ```xml
         <dependency>
             <groupId>com.github.Bl0ckincraft</groupId>
             <artifactId>Kingdoms</artifactId>
-            <version>%version%</version>
+            <version>%tag%</version>
         </dependency>
 ```
 ### Using gradle with build.gradle :
@@ -58,9 +58,9 @@ To work, this plugin need two others plugin :
             }
         }
 ```
-> Finally, add this into the dependencies part and replace `%version%` by this number : [![](https://jitpack.io/v/Bl0ckincraft/Kingdoms.svg)](https://jitpack.io/#Bl0ckincraft/Kingdoms)
+> Finally, add this into the dependencies part and replace `%tag%` by this tag : [![](https://jitpack.io/v/Bl0ckincraft/Kingdoms.svg)](https://jitpack.io/#Bl0ckincraft/Kingdoms)
 ```gradle
         dependencies {
-	        implementation 'com.github.Bl0ckincraft:Kingdoms:%version%'
+	        implementation 'com.github.Bl0ckincraft:Kingdoms:%tag%'
 	    }
 ```
