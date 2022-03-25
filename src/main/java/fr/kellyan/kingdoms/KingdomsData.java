@@ -1,6 +1,5 @@
 package fr.kellyan.kingdoms;
 
-import com.sun.istack.internal.Nullable;
 import fr.kellyan.kingdoms.configurations.Lang;
 import me.ryanhamshire.GriefPrevention.Claim;
 import org.bukkit.command.CommandSender;
@@ -64,7 +63,7 @@ public class KingdomsData {
      * @param creator the entity which will receive the messages.
      * @return the new kingdom or null if an error was encountered.
      */
-    public Kingdom createKingdom(String name, Claim claim, @Nullable CommandSender creator) {
+    public Kingdom createKingdom(String name, Claim claim, CommandSender creator) {
         //Check if the values are valid.
         if (name == null || claim == null) {
             return null;
