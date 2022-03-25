@@ -21,7 +21,7 @@ It is a fully configurable plugin created by [Blockincraft](https://github.com/B
 
 To work, this plugin need three others plugin :
 
-- [Vault](https://www.spigotmc.org/resources/vault.34315/){: target="_blank"} - 1.7 +
+- [Vault](https://www.spigotmc.org/resources/vault.34315/) - 1.7 +
 - [GriefPrevention](https://www.spigotmc.org/resources/griefprevention.1884/) - 16.17.1 +
 - A plugin who add an economy like [EssentialsX](https://www.spigotmc.org/resources/essentialsx.9089/)
 ---
