@@ -2,8 +2,8 @@
 
 ---
 
-##Use Kingdoms in your project - Maven and Gradle
-###Using maven with pom.xml :
+## Use Kingdoms in your project - Maven and Gradle
+### Using maven with pom.xml :
 > Kingdoms Plugin is available in the public Jitpack repos : [![](https://jitpack.io/v/Bl0ckincraft/Kingdoms.svg)](https://jitpack.io/#Bl0ckincraft/Kingdoms) <br>
 > To add it, you must add this into your pom.xml :
 ```xml
@@ -22,7 +22,7 @@
             <version>%version%</version>
         </dependency>
 ```
-###Using gradle with build.gradle :
+### Using gradle with build.gradle :
 > Kingdoms Plugin is available in the public Jitpack repos : [![](https://jitpack.io/v/Bl0ckincraft/Kingdoms.svg)](https://jitpack.io/#Bl0ckincraft/Kingdoms) <br>
 > To add it, you must add the repos into your build.gradle at the end of the repositories :
 ```gradle
