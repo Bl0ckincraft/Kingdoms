@@ -1,4 +1,4 @@
-# Kingdoms - Minecraft Plugin
+# Kingdoms - Minecraft Plugin - 1.17
 This plugin adds a new team system with GUI using the claims of [GriefPrevention](https://www.spigotmc.org/resources/griefprevention.1884/). <br>
 It is a fully configurable plugin created by [Blockincraft](https://github.com/Bl0ckincraft) and [Kellyan](https://github.com/TchaineKems).
 
