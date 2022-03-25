@@ -23,12 +23,15 @@ To work, this plugin need three others plugin :
 
 - [Vault](https://www.spigotmc.org/resources/vault.34315/) - 1.7 +
 - [GriefPrevention](https://www.spigotmc.org/resources/griefprevention.1884/) - 16.17.1 +
-- A plugin who add an economy like [EssentialsX](https://www.spigotmc.org/resources/essentialsx.9089/)
+- A plugin which add an economy like [EssentialsX](https://www.spigotmc.org/resources/essentialsx.9089/)
 ---
 
 ## Use Kingdoms in your project - Maven and Gradle
+
+> Kingdoms Plugin is available in the public **Jitpack** repo : [![](https://jitpack.io/v/Bl0ckincraft/Kingdoms.svg)](https://jitpack.io/#Bl0ckincraft/Kingdoms)
+
 ### Using maven with pom.xml :
-> Kingdoms Plugin is available in the public Jitpack repos : [![](https://jitpack.io/v/Bl0ckincraft/Kingdoms.svg)](https://jitpack.io/#Bl0ckincraft/Kingdoms) <br>
+
 > To add it, you must add this into your pom.xml :
 ```xml
 	    <repositories>
@@ -47,7 +50,7 @@ To work, this plugin need three others plugin :
         </dependency>
 ```
 ### Using gradle with build.gradle :
-> Kingdoms Plugin is available in the public Jitpack repos : [![](https://jitpack.io/v/Bl0ckincraft/Kingdoms.svg)](https://jitpack.io/#Bl0ckincraft/Kingdoms) <br>
+
 > To add it, you must add the repos into your build.gradle at the end of the repositories :
 ```gradle
         allprojects {
