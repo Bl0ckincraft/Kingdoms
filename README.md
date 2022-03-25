@@ -13,6 +13,8 @@ All the features of this plugin can be turned On and Off :
 * Management GUI with personalised items.
 * Admin GUI to manage the kingdoms.
 
+For more explications see the [wiki](https://github.com/Bl0ckincraft/Kingdoms/wiki).
+
 ---
 
 ## Use Kingdoms in your project - Maven and Gradle
