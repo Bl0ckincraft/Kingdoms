@@ -1,4 +1,17 @@
 # Kingdoms - Minecraft Plugin
+This plugin adds a new team system with GUI using the claims of [GriefPrevention](https://www.spigotmc.org/resources/griefprevention.1884/). <br>
+It is a fully configurable plugin created by [Blockincraft](https://github.com/Bl0ckincraft) and [Kellyan](https://github.com/TchaineKems).
+
+---
+
+## Plugin features
+All the features of this plugin can be turned On and Off :
+
+* Members of kingdoms are all trusted players who have the build claim permission.
+* New bank system. When kingdom deleted, the money was given to the owner.
+* New collections system with rewards and fully configurable.
+* Management GUI with personalised items.
+* Admin GUI to manage the kingdoms.
 
 ---
 
