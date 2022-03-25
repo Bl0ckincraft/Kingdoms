@@ -12,8 +12,18 @@ All the features of this plugin can be turned On and Off :
 * New collections system with rewards and fully configurable.
 * Management GUI with personalised items.
 * Admin GUI to manage the kingdoms.
+* Commands permissions.
 
-For more explications see the [wiki](https://github.com/Bl0ckincraft/Kingdoms/wiki).
+> For more explanations, you can take a look at the [wiki](https://github.com/Bl0ckincraft/Kingdoms/wiki).
+
+---
+
+## Plugin dependencies
+
+To work, this plugin need two others plugin :
+
+- [Vault](https://www.spigotmc.org/resources/vault.34315/) - 1.7 +
+- [GriefPrevention](https://www.spigotmc.org/resources/griefprevention.1884/) - 16.17.1 +
 
 ---
 
