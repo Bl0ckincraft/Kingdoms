@@ -16,14 +16,14 @@ import java.util.Locale;
  * This class contain all the translatable messages.
  */
 public enum Lang {
-    //The prefix :
+    //Prefix :
     prefix("&b&9[Kingdoms] "),
 
-    //The help message components :
+    //Help message components :
     helpBar("&9<------- Kingdoms ------->"),
     commandPrefix("&9"),
 
-    //The negative messages :
+    //Negative messages :
     nameSizeError("&cThe name must contain %min_name_length% to %max_name_length% characters!"),
     nameAlreadyUsed("&cThis name is already used!"),
     kingdomAlreadyExist("&cThis claim contains already a kingdom!"),
@@ -32,14 +32,14 @@ public enum Lang {
     haveNotClaimPermissionToDoThat("&cYou haven't the claim permission to do that, you must be trust!"),
     youMustBeInAKingdomToExecuteThisCommand("&cYou must be in a kingdom to execute this command!"),
 
-    //The positive messages :
+    //Positive messages :
     kingdomCreate("&aYou been created a new Kingdom!"),
     kingdomDelete("&aYou been deleted the Kingdom '%name%'!"),
 
-    //The words :
+    //Words :
     name("name"),
 
-    //The commands name :
+    //Commands name :
     kCreate("create", Type.noSpace),
     kDelete("delete", Type.noSpace);
 
