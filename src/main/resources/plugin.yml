@@ -1,0 +1,12 @@
+name: Kingdoms
+version: '${project.version}'
+main: fr.kellyan.kingdoms.Kingdoms
+api-version: 1.17
+depend: [ Vault, GriefPrevention ]
+authors: [ Kellyan, Blockincraft ]
+commands:
+  kingdoms:
+    aliases:
+      - k
+      - kg
+      - kingdom
