@@ -28,8 +28,10 @@ public class CmdCompleter implements TabCompleter {
                 if (actions.containsKey(args[0].toLowerCase(Locale.ROOT))) {
                     //Create a new array of args without the action name.
                     KAction action = actions.get(args[0].toLowerCase(Locale.ROOT));
-                    List<String> argsList = Arrays.asList(args);
-                    argsList.remove(0);
+                    List<String> argsList = new ArrayList<>();
+                    for (int i = 1; i < args.length; i++) {
+                        argsList.add(args[i]);
+                    }
 
                     values.addAll(action.getNextValues(sender, argsList.toArray(new String[0])));
                 }

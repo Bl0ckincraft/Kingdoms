@@ -15,8 +15,11 @@ public class CmdExecutor implements CommandExecutor {
     //This contains all actions example : /kingdoms create -> {"create", new KCreate()}.
     public static final Map<String, KAction> actions = new HashMap<>();
 
-    //Register the actions.
-    static {
+    /**
+     * This method load the actions and save it in map. We don't use {@code static { }} method because the {@link Lang}
+     * data must be loaded before.
+     */
+    public static void loadActions() {
         actions.put(Lang.kCreate.toString(), new KCreate());
         actions.put(Lang.kDelete.toString(), new KDelete());
     }
@@ -34,8 +37,10 @@ public class CmdExecutor implements CommandExecutor {
                     Lang.sendMessage(sender, Lang.onlyPlayersCanExecuteThisCommand.toString());
                     return true;
                 } else {
-                    List<String> argsList = Arrays.asList(args);
-                    argsList.remove(0);
+                    List<String> argsList = new ArrayList<>();
+                    for (int i = 1; i < args.length; i++) {
+                        argsList.add(args[i]);
+                    }
                     if (action.execute(sender, argsList.toArray(new String[0]))) return true;
                 }
             }

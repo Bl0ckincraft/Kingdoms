@@ -5,13 +5,12 @@ It is a fully configurable plugin created by [Blockincraft](https://github.com/B
 ---
 
 ## Plugin features
-All the features of this plugin can be turned On and Off :
 
 * Members of kingdoms are all trusted players who have the build claim permission.
 * New bank system. When kingdom deleted, the money was given to the owner.
 * New collections system with rewards and fully configurable.
 * Management GUI with personalised items.
-* Admin GUI to manage the kingdoms.
+* Configurables messages and commands.
 * Commands permissions.
 
 > For more explanations, you can take a look at the [wiki](https://github.com/Bl0ckincraft/Kingdoms/wiki).
@@ -20,11 +19,11 @@ All the features of this plugin can be turned On and Off :
 
 ## Plugin dependencies
 
-To work, this plugin need two others plugin :
+To work, this plugin need three others plugin :
 
 - [Vault](https://www.spigotmc.org/resources/vault.34315/) - 1.7 +
 - [GriefPrevention](https://www.spigotmc.org/resources/griefprevention.1884/) - 16.17.1 +
-
+- A plugin who add an economy like [EssentialsX](https://www.spigotmc.org/resources/essentialsx.9089/)
 ---
 
 ## Use Kingdoms in your project - Maven and Gradle

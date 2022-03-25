@@ -21,7 +21,11 @@ public enum Lang {
 
     //Help message components :
     helpBar("&9<------- Kingdoms ------->"),
-    commandPrefix("&9"),
+    helpCommandPrefix("&9"),
+
+    //ON/OFF message :
+    pluginOn("&aPlugin [ON]"),
+    pluginOff("&cPlugin [OFF]"),
 
     //Negative messages :
     nameSizeError("&cThe name must contain %min_name_length% to %max_name_length% characters!"),
@@ -79,8 +83,7 @@ public enum Lang {
             }
             id += nameChar;
         }
-        id.toLowerCase(Locale.ROOT);
-        return id;
+        return id.toLowerCase(Locale.ROOT);
     }
 
     /**
@@ -99,7 +102,7 @@ public enum Lang {
     public static void sendMessage(CommandSender receiver, String... messages) {
         for (String message : messages) {
             String editedMessage = ChatColor.translateAlternateColorCodes('&', prefix + Settings.replaceValues(message));
-            receiver.sendMessage(receiver instanceof Player ? editedMessage : ChatColor.stripColor(editedMessage));
+            receiver.sendMessage(editedMessage);
         }
     }
 
@@ -112,14 +115,14 @@ public enum Lang {
         List<String> helpParts = new ArrayList<>();
         helpParts.add(helpBar.toString());
         for (KAction action : CmdExecutor.actions.values()) {
-            helpParts.add(commandPrefix + action.getCommandHasHelp());
+            helpParts.add(helpCommandPrefix + action.getCommandHasHelp());
         }
         helpParts.add(helpBar.toString());
 
         //Send the message parts.
         for (String part : helpParts) {
             String editedPart = ChatColor.translateAlternateColorCodes('&', part);
-            receiver.sendMessage(receiver instanceof Player ? editedPart : ChatColor.stripColor(editedPart));
+            receiver.sendMessage(editedPart);
         }
     }
 

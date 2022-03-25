@@ -27,9 +27,10 @@ public class Settings {
      * @return the edited text.
      */
     public static String replaceValues(String text) {
-        replaceValue(text, maxNameLength);
-        replaceValue(text, maxNameLength);
-        return text;
+        String editedText = text;
+        editedText = replaceValue(editedText, minNameLength);
+        editedText = replaceValue(editedText, maxNameLength);
+        return editedText;
     }
 
     /**

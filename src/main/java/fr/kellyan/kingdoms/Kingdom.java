@@ -2,6 +2,9 @@ package fr.kellyan.kingdoms;
 
 import me.ryanhamshire.GriefPrevention.Claim;
 
+/**
+ * A kingdom object.
+ */
 public class Kingdom {
     private String name;
     private final Claim claim;

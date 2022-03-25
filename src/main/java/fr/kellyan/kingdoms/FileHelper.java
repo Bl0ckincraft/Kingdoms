@@ -32,4 +32,13 @@ public class FileHelper {
 
         return langConfig;
     }
+
+    /**
+     * This method create the config files in 'plugins/kingdoms' folder if they don't exist.
+     */
+    public static void saveAllDefaultConfigs() {
+        Kingdoms.getInstance().saveResource("lang.yml", false);
+        Kingdoms.getInstance().saveResource("config.yml", false);
+        Kingdoms.getInstance().saveResource("data.yml", false);
+    }
 }

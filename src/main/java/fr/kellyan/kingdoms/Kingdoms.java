@@ -5,12 +5,16 @@ import fr.kellyan.kingdoms.commands.CmdExecutor;
 import fr.kellyan.kingdoms.configurations.Lang;
 import fr.kellyan.kingdoms.configurations.Settings;
 import fr.kellyan.kingdoms.listeners.ClaimEventsListener;
+import fr.kellyan.kingdoms.listeners.MenuListeners;
+import jdk.jfr.internal.Logger;
 import net.milkbowl.vault.economy.Economy;
 import org.bukkit.Bukkit;
+import org.bukkit.ChatColor;
 import org.bukkit.command.PluginCommand;
 import org.bukkit.plugin.RegisteredServiceProvider;
 import org.bukkit.plugin.java.JavaPlugin;
 
+import java.io.File;
 import java.util.Objects;
 
 /**
@@ -60,11 +64,12 @@ public final class Kingdoms extends JavaPlugin {
         initListeners();
 
         //Load all the configuration values.
+        FileHelper.saveAllDefaultConfigs();
         Settings.loadValues();
         Lang.loadMessages();
+        CmdExecutor.loadActions();
 
-        getLogger().info("Kingdoms [ON]");
-    }
+        Lang.sendMessage(Bukkit.getConsoleSender(), ChatColor.translateAlternateColorCodes('&', Lang.pluginOn.toString()));}
 
     /**
      * Set the executor and the completer of the /kingdoms command.
@@ -86,6 +91,7 @@ public final class Kingdoms extends JavaPlugin {
      */
     private void initListeners() {
         Bukkit.getPluginManager().registerEvents(new ClaimEventsListener(), this);
+        Bukkit.getPluginManager().registerEvents(new MenuListeners(), this);
     }
 
     /**
@@ -115,6 +121,6 @@ public final class Kingdoms extends JavaPlugin {
      */
     @Override
     public void onDisable() {
-        getLogger().info("Kingdoms [OFF]");
+        Lang.sendMessage(Bukkit.getConsoleSender(), ChatColor.translateAlternateColorCodes('&', Lang.pluginOff.toString()));
     }
 }
