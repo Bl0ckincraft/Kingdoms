@@ -1,4 +1,4 @@
-# Kingdoms - Minecraft Plugin - 1.17
+# Kingdoms - Minecraft Plugin
 This plugin adds a new team system with GUI using the claims of [GriefPrevention](https://www.spigotmc.org/resources/griefprevention.1884/). <br>
 It is a fully configurable plugin created by [Blockincraft](https://github.com/Bl0ckincraft) and [Kellyan](https://github.com/TchaineKems).
 
@@ -21,14 +21,14 @@ It is a fully configurable plugin created by [Blockincraft](https://github.com/B
 
 To work, this plugin need three others plugin :
 
-- <a href="https://www.spigotmc.org/resources/vault.34315/" target="_blank">Vault</a> - 1.7 +
-- <a href="https://www.spigotmc.org/resources/griefprevention.1884/" target="_blank">GriefPrevention</a> - 16.17.1 +
-- A plugin which add an economy like <a href="https://www.spigotmc.org/resources/essentialsx.9089/" target="_blank">EssentialsX</a>
+- [Vault](https://www.spigotmc.org/resources/vault.34315/) - 1.7 +
+- [GriefPrevention](https://www.spigotmc.org/resources/griefprevention.1884/) - 16.17.1 +
+- A plugin which add an economy like [EssentialsX](https://www.spigotmc.org/resources/essentialsx.9089/)
 ---
 
 ## Use Kingdoms in your project - Maven and Gradle
 
-> Kingdoms Plugin is available in the public **Jitpack** repo : [![](https://jitpack.io/v/Bl0ckincraft/Kingdoms.svg)](https://jitpack.io/#Bl0ckincraft/Kingdoms)
+> Kingdoms Plugin is available in the public **Jitpack** repos : [![](https://jitpack.io/v/Bl0ckincraft/Kingdoms.svg)](https://jitpack.io/#Bl0ckincraft/Kingdoms)
 
 ### Using maven with pom.xml :
 
