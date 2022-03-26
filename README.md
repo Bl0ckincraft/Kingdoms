@@ -21,9 +21,9 @@ It is a fully configurable plugin created by [Blockincraft](https://github.com/B
 
 To work, this plugin need three others plugin :
 
-- [Vault](https://www.spigotmc.org/resources/vault.34315/) - 1.7 +
-- [GriefPrevention](https://www.spigotmc.org/resources/griefprevention.1884/) - 16.17.1 +
-- A plugin which add an economy like [EssentialsX](https://www.spigotmc.org/resources/essentialsx.9089/)
+- <a href="https://www.spigotmc.org/resources/vault.34315/" target="_blank">Vault</a> - 1.7 +
+- <a href="https://www.spigotmc.org/resources/griefprevention.1884/" target="_blank">GriefPrevention</a> - 16.17.1 +
+- A plugin which add an economy like <a href="https://www.spigotmc.org/resources/essentialsx.9089/" target="_blank">EssentialsX</a>
 ---
 
 ## Use Kingdoms in your project - Maven and Gradle
