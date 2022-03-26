@@ -1,7 +1,7 @@
-package fr.kellyan.kingdoms.commands;
+package fr.blockincraft.kingdoms.commands;
 
-import fr.kellyan.kingdoms.Kingdoms;
-import fr.kellyan.kingdoms.configurations.Lang;
+import fr.blockincraft.kingdoms.Kingdoms;
+import fr.blockincraft.kingdoms.configurations.Lang;
 import me.ryanhamshire.GriefPrevention.Claim;
 import me.ryanhamshire.GriefPrevention.ClaimPermission;
 import me.ryanhamshire.GriefPrevention.GriefPrevention;

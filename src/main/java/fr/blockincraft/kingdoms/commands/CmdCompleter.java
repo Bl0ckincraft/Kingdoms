@@ -1,4 +1,4 @@
-package fr.kellyan.kingdoms.commands;
+package fr.blockincraft.kingdoms.commands;
 
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;

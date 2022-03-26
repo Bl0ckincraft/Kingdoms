@@ -1,6 +1,6 @@
-package fr.kellyan.kingdoms.listeners;
+package fr.blockincraft.kingdoms.listeners;
 
-import fr.kellyan.kingdoms.menus.BaseMenu;
+import fr.blockincraft.kingdoms.menus.BaseMenu;
 import org.bukkit.Material;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;

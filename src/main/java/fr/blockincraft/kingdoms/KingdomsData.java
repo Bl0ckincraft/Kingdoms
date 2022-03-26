@@ -1,6 +1,6 @@
-package fr.kellyan.kingdoms;
+package fr.blockincraft.kingdoms;
 
-import fr.kellyan.kingdoms.configurations.Lang;
+import fr.blockincraft.kingdoms.configurations.Lang;
 import me.ryanhamshire.GriefPrevention.Claim;
 import org.bukkit.command.CommandSender;
 
@@ -55,6 +55,15 @@ public class KingdomsData {
         return null;
     }
 
+    public boolean nameAlreadyUsed(String name) {
+        for (Kingdom kingdom : kingdoms) {
+            if (kingdom.getName().equalsIgnoreCase(name)) {
+                return true;
+            }
+        }
+        return false;
+    }
+
     /**
      * This method try to create a claim and register it. It also checks if the name and the claim are already used
      * or not and send an information message if the creator wasn't null.
@@ -79,10 +88,11 @@ public class KingdomsData {
             if (kingdom.getClaim() == claim) {
                 if (sendMessage) Lang.sendMessage(creator, Lang.kingdomAlreadyExist.toString());
                 return null;
-            } else if (kingdom.getName() == name) {
-                if (sendMessage) Lang.sendMessage(creator, Lang.nameAlreadyUsed.toString());
-                return null;
             }
+        }
+        if (nameAlreadyUsed(name)) {
+            if (sendMessage) Lang.sendMessage(creator, Lang.nameAlreadyUsed.toString());
+            return null;
         }
 
         //Finally, create and register the kingdom.

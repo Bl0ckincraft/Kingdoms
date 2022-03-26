@@ -1,6 +1,6 @@
-package fr.kellyan.kingdoms.configurations;
+package fr.blockincraft.kingdoms.configurations;
 
-import fr.kellyan.kingdoms.Kingdoms;
+import fr.blockincraft.kingdoms.Kingdoms;
 import org.bukkit.configuration.ConfigurationSection;
 import org.bukkit.configuration.file.FileConfiguration;
 

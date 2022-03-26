@@ -1,4 +1,4 @@
-package fr.kellyan.kingdoms;
+package fr.blockincraft.kingdoms;
 
 import me.ryanhamshire.GriefPrevention.Claim;
 
@@ -8,6 +8,8 @@ import me.ryanhamshire.GriefPrevention.Claim;
 public class Kingdom {
     private String name;
     private final Claim claim;
+
+    //Menus :
 
     /**
      * The constructor of the class.
@@ -43,8 +45,14 @@ public class Kingdom {
     /**
      * This method allow you to rename the kingdom.
      * @param name the new name.
+     * @returns if the kingdom was renamed.
      */
-    public void setName(String name) {
-        this.name = name;
+    public boolean setName(String name) {
+        if (!Kingdoms.getInstance().getData().nameAlreadyUsed(name)) {
+            this.name = name;
+            return true;
+        } else {
+            return false;
+        }
     }
 }

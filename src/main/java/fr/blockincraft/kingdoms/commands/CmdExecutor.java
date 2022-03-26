@@ -1,6 +1,6 @@
-package fr.kellyan.kingdoms.commands;
+package fr.blockincraft.kingdoms.commands;
 
-import fr.kellyan.kingdoms.configurations.Lang;
+import fr.blockincraft.kingdoms.configurations.Lang;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;

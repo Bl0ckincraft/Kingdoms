@@ -1,6 +1,6 @@
 # Kingdoms - Minecraft Plugin
 This plugin adds a new team system with GUI using the claims of [GriefPrevention](https://www.spigotmc.org/resources/griefprevention.1884/). <br>
-It is a fully configurable plugin created by [Blockincraft](https://github.com/Bl0ckincraft) and [Kellyan](https://github.com/TchaineKems).
+It is a fully configurable plugin created by [Blockincraft](https://github.com/Bl0ckincraft).
 
 ---
 
@@ -24,6 +24,7 @@ To work, this plugin need three others plugin :
 - [Vault](https://www.spigotmc.org/resources/vault.34315/) - 1.7 +
 - [GriefPrevention](https://www.spigotmc.org/resources/griefprevention.1884/) - 16.17.1 +
 - A plugin which add an economy like [EssentialsX](https://www.spigotmc.org/resources/essentialsx.9089/)
+
 ---
 
 ## Use Kingdoms in your project - Maven and Gradle

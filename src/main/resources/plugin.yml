@@ -1,9 +1,9 @@
 name: Kingdoms
 version: '${project.version}'
-main: fr.kellyan.kingdoms.Kingdoms
+main: fr.blockincraft.kingdoms.Kingdoms
 api-version: 1.17
 depend: [ Vault, GriefPrevention ]
-authors: [ Kellyan, Blockincraft ]
+authors: [ Blockincraft ]
 commands:
   kingdoms:
     aliases:

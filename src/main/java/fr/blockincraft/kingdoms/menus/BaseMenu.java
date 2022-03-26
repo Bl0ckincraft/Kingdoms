@@ -1,11 +1,10 @@
-package fr.kellyan.kingdoms.menus;
+package fr.blockincraft.kingdoms.menus;
 
-import fr.kellyan.kingdoms.listeners.MenuListeners;
+import fr.blockincraft.kingdoms.listeners.MenuListeners;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.entity.Player;
 import org.bukkit.event.inventory.ClickType;
-import org.bukkit.event.inventory.InventoryClickEvent;
 import org.bukkit.inventory.Inventory;
 import org.bukkit.inventory.InventoryHolder;
 import org.bukkit.inventory.ItemStack;

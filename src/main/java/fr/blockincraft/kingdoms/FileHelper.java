@@ -1,4 +1,4 @@
-package fr.kellyan.kingdoms;
+package fr.blockincraft.kingdoms;
 
 import com.google.common.base.Charsets;
 import org.bukkit.configuration.file.FileConfiguration;

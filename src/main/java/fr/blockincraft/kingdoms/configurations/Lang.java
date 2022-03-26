@@ -1,12 +1,11 @@
-package fr.kellyan.kingdoms.configurations;
+package fr.blockincraft.kingdoms.configurations;
 
-import fr.kellyan.kingdoms.FileHelper;
-import fr.kellyan.kingdoms.commands.CmdExecutor;
-import fr.kellyan.kingdoms.commands.KAction;
+import fr.blockincraft.kingdoms.FileHelper;
+import fr.blockincraft.kingdoms.commands.CmdExecutor;
+import fr.blockincraft.kingdoms.commands.KAction;
 import org.bukkit.ChatColor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.configuration.file.FileConfiguration;
-import org.bukkit.entity.Player;
 
 import java.util.ArrayList;
 import java.util.List;

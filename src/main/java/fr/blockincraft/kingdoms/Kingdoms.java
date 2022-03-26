@@ -1,12 +1,11 @@
-package fr.kellyan.kingdoms;
+package fr.blockincraft.kingdoms;
 
-import fr.kellyan.kingdoms.commands.CmdCompleter;
-import fr.kellyan.kingdoms.commands.CmdExecutor;
-import fr.kellyan.kingdoms.configurations.Lang;
-import fr.kellyan.kingdoms.configurations.Settings;
-import fr.kellyan.kingdoms.listeners.ClaimEventsListener;
-import fr.kellyan.kingdoms.listeners.MenuListeners;
-import jdk.jfr.internal.Logger;
+import fr.blockincraft.kingdoms.commands.CmdCompleter;
+import fr.blockincraft.kingdoms.commands.CmdExecutor;
+import fr.blockincraft.kingdoms.configurations.Lang;
+import fr.blockincraft.kingdoms.configurations.Settings;
+import fr.blockincraft.kingdoms.listeners.ClaimListeners;
+import fr.blockincraft.kingdoms.listeners.MenuListeners;
 import net.milkbowl.vault.economy.Economy;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
@@ -14,7 +13,6 @@ import org.bukkit.command.PluginCommand;
 import org.bukkit.plugin.RegisteredServiceProvider;
 import org.bukkit.plugin.java.JavaPlugin;
 
-import java.io.File;
 import java.util.Objects;
 
 /**
@@ -90,7 +88,7 @@ public final class Kingdoms extends JavaPlugin {
      * Register all the listeners used by the plugin.
      */
     private void initListeners() {
-        Bukkit.getPluginManager().registerEvents(new ClaimEventsListener(), this);
+        Bukkit.getPluginManager().registerEvents(new ClaimListeners(), this);
         Bukkit.getPluginManager().registerEvents(new MenuListeners(), this);
     }
 
