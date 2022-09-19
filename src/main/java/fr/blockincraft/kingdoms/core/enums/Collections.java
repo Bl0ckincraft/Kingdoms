@@ -9,7 +9,7 @@ import org.bukkit.inventory.meta.ItemMeta;
 import java.util.Arrays;
 
 /**
- * To a good display please make 7 rewards and 5 collections per level with 3 levels
+ * To have a good display please make 7 rewards per collections, 5 collections per level, 3 levels
  */
 public enum Collections {
     DIAMOND(1, Material.DIAMOND, "&9&lDiamant", new String[]{"", "&bTotal: %collected%/%max%", "&bProchain: %collected%/%next%"}, new Reward[]{
