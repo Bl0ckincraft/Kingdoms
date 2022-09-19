@@ -1,0 +1,175 @@
+name: Kingdoms
+version: '${project.version}'
+main: fr.blockincraft.kingdoms.Kingdoms
+api-version: 1.17
+depend: [ Vault ]
+softdepend: [ WorldGuard, dynmap, ItemsAdder, Slimefun ]
+authors: [ Blockincraft ]
+description: MineXplore kingdoms plugin
+commands:
+  kingdoms:
+    usage: /kingdoms help
+    aliases:
+      - kingdom
+  claims:
+    usage: /claims help
+    aliases:
+      - claim
+  areas:
+    usage: /areas help
+    aliases:
+      - area
+permissions:
+  kingdoms.*:
+    default: false
+    children:
+      - kingdoms.areas.info
+      - kingdoms.areas.pos1
+      - kingdoms.areas.pos2
+      - kingdoms.areas.view
+      - kingdoms.claims.create
+      - kingdoms.claims.delete
+      - kingdoms.claims.extend
+      - kingdoms.claims.help
+      - kingdoms.claims.info
+      - kingdoms.claims.trust
+      - kingdoms.claims.untrust
+      - kingdoms.kingdoms.commission
+      - kingdoms.kingdoms.construction.create
+      - kingdoms.kingdoms.construction.delete
+      - kingdoms.kingdoms.construction.info
+      - kingdoms.kingdoms.construction.extend
+      - kingdoms.kingdoms.create
+      - kingdoms.kingdoms.delete
+      - kingdoms.kingdoms.demote
+      - kingdoms.kingdoms.extend
+      - kingdoms.kingdoms.help
+      - kingdoms.kingdoms.home
+      - kingdoms.kingdoms.info
+      - kingdoms.kingdoms.invite
+      - kingdoms.kingdoms.join
+      - kingdoms.kingdoms.kick
+      - kingdoms.kingdoms.leave
+      - kingdoms.kingdoms.promote
+      - kingdoms.kingdoms.ranking
+      - kingdoms.kingdoms.rename
+      - kingdoms.kingdoms.sethome
+      - kingdoms.kingdoms.teleport
+      - kingdoms.kingdoms.deposit
+      - kingdoms.kingdoms.withdraw
+      - kingdoms.kingdoms.consume
+
+  kingdoms.areas.*:
+    default: false
+    children:
+      - kingdoms.areas.info
+      - kingdoms.areas.pos1
+      - kingdoms.areas.pos2
+      - kingdoms.areas.view
+  kingdoms.areas.info:
+      default: true
+  kingdoms.areas.pos1:
+    default: true
+  kingdoms.areas.pos2:
+    default: true
+  kingdoms.areas.view:
+    default: true
+
+  kingdoms.claims.*:
+    default: false
+    children:
+      - kingdoms.claims.create
+      - kingdoms.claims.delete
+      - kingdoms.claims.extend
+      - kingdoms.claims.help
+      - kingdoms.claims.info
+      - kingdoms.claims.trust
+      - kingdoms.claims.untrust
+  kingdoms.claims.create:
+    default: true
+  kingdoms.claims.delete:
+    default: true
+  kingdoms.claims.extend:
+    default: true
+  kingdoms.claims.help:
+    default: true
+  kingdoms.claims.info:
+    default: true
+  kingdoms.claims.trust:
+    default: true
+  kingdoms.claims.untrust:
+    default: true
+
+  kingdoms.kingdoms.*:
+    default: false
+    children:
+      - kingdoms.kingdoms.commission
+      - kingdoms.kingdoms.construction.create
+      - kingdoms.kingdoms.construction.delete
+      - kingdoms.kingdoms.construction.info
+      - kingdoms.kingdoms.construction.extend
+      - kingdoms.kingdoms.create
+      - kingdoms.kingdoms.delete
+      - kingdoms.kingdoms.demote
+      - kingdoms.kingdoms.extend
+      - kingdoms.kingdoms.help
+      - kingdoms.kingdoms.home
+      - kingdoms.kingdoms.info
+      - kingdoms.kingdoms.invite
+      - kingdoms.kingdoms.join
+      - kingdoms.kingdoms.kick
+      - kingdoms.kingdoms.leave
+      - kingdoms.kingdoms.promote
+      - kingdoms.kingdoms.ranking
+      - kingdoms.kingdoms.rename
+      - kingdoms.kingdoms.sethome
+      - kingdoms.kingdoms.teleport
+  kingdoms.kingdoms.commission:
+    default: true
+  kingdoms.kingdoms.constructions.*:
+    default: false
+    children:
+      - kingdoms.kingdoms.constructions.create
+      - kingdoms.kingdoms.constructions.delete
+      - kingdoms.kingdoms.constructions.info
+      - kingdoms.kingdoms.constructions.extend
+  kingdoms.kingdoms.constructions.create:
+    default: true
+  kingdoms.kingdoms.constructions.delete:
+    default: true
+  kingdoms.kingdoms.constructions.info:
+    default: true
+  kingdoms.kingdoms.constructions.extend:
+    default: true
+  kingdoms.kingdoms.create:
+    default: true
+  kingdoms.kingdoms.delete:
+    default: true
+  kingdoms.kingdoms.demote:
+    default: true
+  kingdoms.kingdoms.extend:
+    default: true
+  kingdoms.kingdoms.help:
+    default: true
+  kingdoms.kingdoms.home:
+    default: true
+  kingdoms.kingdoms.info:
+    default: true
+  kingdoms.kingdoms.invite:
+    default: true
+  kingdoms.kingdoms.join:
+    default: true
+  kingdoms.kingdoms.kick:
+    default: true
+  kingdoms.kingdoms.leave:
+    default: true
+  kingdoms.kingdoms.promote:
+    default: true
+  kingdoms.kingdoms.ranking:
+    default: true
+  kingdoms.kingdoms.rename:
+    default: true
+  kingdoms.kingdoms.sethome:
+    default: true
+  kingdoms.kingdoms.teleport:
+    default: true

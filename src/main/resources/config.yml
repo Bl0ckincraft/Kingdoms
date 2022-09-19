@@ -1,0 +1,6 @@
+database:
+  ip: ip
+  port: 3306
+  name: kingdoms
+  user: user
+  pass: pass

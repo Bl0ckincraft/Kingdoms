@@ -1,0 +1,55 @@
+dynmap:
+  kingdoms:
+    title: "Royaumes"
+    info_bubble:
+      description: "<center><div>
+                    <h1><b><kingdom_name></b></h1>
+                    <b>Classement: </b>#<rank><br/>
+                    <b>Propriétaire: </b><owner_name><br/>
+                    <b>Membres: </b><member_amount><br/>
+                    <b>Points: </b><ranking_points><br/>
+                    <b>Niveau: </b><level><br/>
+                    <b>Taille: </b><size> blocs<br/><br/>
+                    </div></center>
+                    <center><img src=\"https://minotar.net/helm/<owner_name>/40\"/></center>"
+
+  claims:
+    title: "Claims"
+    info_bubble:
+      description: "<center><div>
+                    <h1><b>Claim de <owner_name></b></h1>
+                    <b>Membres: </b><member_amount><br/>
+                    <b>Taille: </b><size> blocs<br/><br/>
+                    </div></center>
+                    <center><img src=\"https://minotar.net/helm/<owner_name>/40\"/></center>"
+  constructions:
+    title: "Constructions"
+    info_bubble:
+      description: "<center><div>
+                    <h1><b><construction_name></b></h1>
+                    <b>Royaume: </b><kingdom_name><br/>
+                    <b>Niveau: </b><level>/<max_level><br/>
+                    <b>Points: </b><points><br/>
+                    <b>Taille: </b><size> blocs
+                    </div></center>"
+construction:
+  name:
+    town_hall: Hôtel de ville
+    home: Habitation
+    warehouse: Entrepôt
+    bank: Banque
+kingdom:
+  level:
+    new_kingdom: "Royaume Débutant"
+    little_kingdom: "Petit Royaume"
+    big_kingdom: "Grand Royaume"
+    rich_kingdom: "Royaume Riche"
+    empire: "Empire"
+permission:
+  level:
+    owner: "Propriétaire"
+    co-owner: "Co-Propriétaire"
+    manager: "Gestionnaires"
+    trusted_member: "Membre de confiance"
+    established_member: "Membre établi"
+    member: "Membre"
