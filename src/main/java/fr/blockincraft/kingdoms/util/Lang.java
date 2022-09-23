@@ -28,7 +28,7 @@ public enum Lang {
      * min_size = minimum size required
      */
     AREA_IS_TOO_SMALL("commands.area_is_too_small", "&9Kingdoms >> &cThis area is to small. <size> blocks instead of <min_size> blocks (min)."),
-    INVALID_NUMBER("invalid_number", "&9Kingdoms >> &cYou send an invalid number."),
+    INVALID_NUMBER("commands.invalid_number", "&9Kingdoms >> &cYou send an invalid number."),
     /**
      * Params: <br/>
      * player_name = name of the unknown player
@@ -239,19 +239,19 @@ public enum Lang {
     ALREADY_HAVE_A_KINGDOM("commands.kingdoms.already_have_a_kingdom", "&9Kingdoms >> &cYou have already a kingdom, you need to leave it to do that."),
     YOU_ARE_NOT_INVITED_IN_THIS_KINGDOM("commands.kingdoms.you_are_not_invited_in_this_kingdom", "&9Kingdoms >> &cYou aren't invited in this kingdom."),
     THIS_KINGDOM_NO_LONGER_EXIST("commands.kingdoms.this_kingom_no_longer_exist", "&9Kingdoms >> &cThis kingdom no longer exist."),
-    YOU_CANNOT_LEAVE_YOUR_KINGDOM("you_cannot_leave_your_kingdom", "&9Kingdoms >> &cYou cannot leave this kingdom, you need to delete it."),
+    YOU_CANNOT_LEAVE_YOUR_KINGDOM("commands.kingdoms.you_cannot_leave_your_kingdom", "&9Kingdoms >> &cYou cannot leave this kingdom, you need to delete it."),
     /**
      * Params: <br/>
      * max_amount = max amount that the bank can store <br/>
      * current_amount = amount already stored in the bank
      */
-    BANK_CAN_ONLY_CONTAIN("bank_can_only_contain", "&9Kingdoms >> &cThe bank can only contains %max_amount% and it already contains %current_amount%."),
-    DO_NOT_HAVE_ENOUGH_MONEY("do_not_have_enough_money", "&9Kingdoms >> &cYou haven't enough money to do that."),
-    DO_NOT_HAVE_ENOUGH_MONEY_IN_BANK("do_not_have_enough_money_in_bank", "&9Kingdoms >> &cYou haven't enough money in the bank to do that."),
-    ERROR_OCCURRED_DURING_TRANSACTION("error_occurred_during_transaction", "&9Kingdoms >> &cAn error has occurred during transaction."),
-    NEED_ITEM_IN_HAND("need_item_in_hand", "&9Kingdoms >> &cYou need to hold an item in the main hand to do that."),
-    NO_COLLECTION_OF_THIS_MATERIAL("no_collection_of_this_material", "&9Kingdoms >> &cThis item isn't collectionable."),
-    COLLECTION_ALREADY_MAXED("collection_already_maxed", "&9Kingdoms >> &cThe collection is already maxed."),
+    BANK_CAN_ONLY_CONTAIN("commands.kingdoms.bank_can_only_contain", "&9Kingdoms >> &cThe bank can only contains <max_amount> and it already contains <current_amount>."),
+    DO_NOT_HAVE_ENOUGH_MONEY("commands.kingdoms.do_not_have_enough_money", "&9Kingdoms >> &cYou haven't enough money to do that."),
+    DO_NOT_HAVE_ENOUGH_MONEY_IN_BANK("commands.kingdoms.do_not_have_enough_money_in_bank", "&9Kingdoms >> &cYou haven't enough money in the bank to do that."),
+    ERROR_OCCURRED_DURING_TRANSACTION("commands.kingdoms.error_occurred_during_transaction", "&9Kingdoms >> &cAn error has occurred during transaction."),
+    NEED_ITEM_IN_HAND("commands.kingdoms.need_item_in_hand", "&9Kingdoms >> &cYou need to hold an item in the main hand to do that."),
+    NO_COLLECTION_OF_THIS_MATERIAL("commands.kingdoms.no_collection_of_this_material", "&9Kingdoms >> &cThis item isn't collectionable."),
+    COLLECTION_ALREADY_MAXED("commands.kingdoms.collection_already_maxed", "&9Kingdoms >> &cThe collection is already maxed."),
 
     /**<b><font color="aqua" size=6>KINGDOMS COMMAND MESSAGES - INFO</font></b>*/
     KINGDOMS_COMMAND_MESSAGES_INFO("", ""),
@@ -341,7 +341,7 @@ public enum Lang {
     KINGDOM_HELP_MESSAGE("commands.kingdoms.help_message", "&9Kingdoms >> &bAll informations are on our wiki: &n&ohttp://minexplore.fr/wiki/kingdoms"),
     KINGDOM_COMMISSION_INFO_MESSAGE("commands.kingdoms.commission_info_message",
             "&9&l&m---------------------------------------------|" +
-                    "&9<commission_name>: &b<commission_desc>|" +
+                    "&9&l<commission_name>: &b<commission_desc>|" +
                     "&9Progression: &b<progression>&9/&b<objective> &9[&b<progress_bar>&9]|" +
                     "&9Completed commissions: &b<completed_commissions>|" +
                     "&9&l&m---------------------------------------------"),
@@ -381,30 +381,30 @@ public enum Lang {
      * construction_name = name of the construction which was created.
      */
     SUCCESS_CONSTRUCTION_CREATION("commands.kingdoms.success_construction_creation", "&9Kingdoms >> &aYou have been create a new <construction_name>&a."),
-    SUCCESS_CONSTRUCTION_EXTENSION("success_construction_extension", "&9Kingdoms >> &aYou have been extend this construction."),
-    SUCCESS_KINGDOM_LEAVE("success_kingdom_leave", "&9Kingdoms >> &aYou have been leave your kingdom."),
+    SUCCESS_CONSTRUCTION_EXTENSION("commands.kingdoms.success_construction_extension", "&9Kingdoms >> &aYou have been extend this construction."),
+    SUCCESS_KINGDOM_LEAVE("commands.kingdoms.success_kingdom_leave", "&9Kingdoms >> &aYou have been leave your kingdom."),
     /**
      * Params: <br/>
      * amount = amount of money
      */
-    SUCCESS_DEPOSIT("success_deposit", "&9Kingdoms >> &aYou have been deposit %amount%."),
+    SUCCESS_DEPOSIT("commands.kingdoms.success_deposit", "&9Kingdoms >> &aYou have been deposit <amount>."),
     /**
      * Params: <br/>
      * amount = amount of money
      */
-    SUCCESS_WITHDRAW("success_withdraw", "&9Kingdoms >> &aYou have been withdraw %amount%."),
+    SUCCESS_WITHDRAW("commands.kingdoms.success_withdraw", "&9Kingdoms >> &aYou have been withdraw <amount>."),
     /**
      * Params: <br/>
      * amount = amount of item consumed <br/>
      * material = material of item (ex: DIAMOND)
      */
-    SUCCESS_CONSUME("success_consume", "&9Kingdoms >> &aYou have been give %amount% %material% to the kingdom collection."),
+    SUCCESS_CONSUME("commands.kingdoms.success_consume", "&9Kingdoms >> &aYou have been give <amount> <material> to the kingdom collection."),
     /**
      * Params: <br/>
      * amount = amount of item consumed <br/>
      * material = material of item (ex: DIAMOND)
      */
-    SUCCESS_CONSUME_AND_FINISH("success_consume_and_finish", "&9Kingdoms >> &aYou have been give %amount% %material% to the kingdom collection and finish it!"),
+    SUCCESS_CONSUME_AND_FINISH("commands.kingdoms.success_consume_and_finish", "&9Kingdoms >> &aYou have been give <amount> <material> to the kingdom collection and finish it!"),
 
     /**<b><font color="yellow" size=6>DYNMAP TITLES</font></b>*/
     DYNMAP_TITLES("", ""),
@@ -471,8 +471,8 @@ public enum Lang {
     OTHER_MESSAGES("", ""),
     COMPLETE_COMMISSION("messages.complete_commission", "&9Kingdoms >> &bYou completed a commission : <commission_name>!");
 
-    private final String path;
-    private final String defaultValue;
+    public final String path;
+    public final String defaultValue;
 
     Lang(String path, String defaultValue) {
         this.path = path;

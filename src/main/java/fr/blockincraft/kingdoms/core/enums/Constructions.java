@@ -22,7 +22,7 @@ import java.util.*;
  * nether_portal, chorus_flower, falling blocks as BlockRequirement or actualize the {@link ConstructionsData} working !
  */
 public enum Constructions {
-    TOWN_HALL(0x5a03fc, 1, "town_hall", new int[]{5, 10, 20},
+    TOWN_HALL(0x5a03fc, 1, "town_hall", new int[]{10, 25, 50},
             new Requirements(9, 10, 9, KingdomLevels.NEW,
                     new BlockRequirement(Material.DIAMOND_BLOCK, 1),
                     new BlockRequirement(Material.LECTERN, 1)
@@ -36,14 +36,14 @@ public enum Constructions {
                     new BlockRequirement(Material.DRAGON_HEAD, 4)
             )
     ),
-    HOME(0x00ff26, 15, "home", new int[]{1},
+    HOME(0x00ff26, 15, "home", new int[]{2},
             new Requirements(6, 5, 6, KingdomLevels.NEW,
                     new BlockRequirement(Material.WHITE_BED, 1),
                     new BlockRequirement(Material.CHEST, 1),
                     new BlockRequirement(Material.OAK_DOOR, 1)
             )
     ),
-    WAREHOUSE(0xa36b39, 1, "warehouse", new int[]{3, 7, 15},
+    WAREHOUSE(0xa36b39, 1, "warehouse", new int[]{6, 14, 18, 26, 30},
             new Requirements(12, 6, 12, KingdomLevels.LITTLE,
                     new BlockRequirement(Material.BARREL, 16),
                     new BlockRequirement(Material.LECTERN, 1),
@@ -54,12 +54,22 @@ public enum Constructions {
                     new BlockRequirement(Material.LECTERN, 2),
                     new BlockRequirement(Material.DIAMOND_BLOCK, 10)
             ),
+            new Requirements(18, 8, 18, KingdomLevels.BIG,
+                    new BlockRequirement(Material.BARREL, 80),
+                    new BlockRequirement(Material.LECTERN, 3),
+                    new BlockRequirement(Material.DIAMOND_BLOCK, 20)
+            ),
             new Requirements(28, 12, 28, KingdomLevels.RICH,
                     new BlockRequirement(Material.BARREL, 192),
-                    new BlockRequirement(Material.LECTERN, 3),
+                    new BlockRequirement(Material.LECTERN, 4),
                     new BlockRequirement(Material.NETHERITE_BLOCK, 2)
+            ),
+            new Requirements(28, 12, 28, KingdomLevels.EMPIRE,
+                    new BlockRequirement(Material.BARREL, 224),
+                    new BlockRequirement(Material.LECTERN, 5),
+                    new BlockRequirement(Material.NETHERITE_BLOCK, 10)
             )),
-    BANK(0xffd900, 1, "bank", new int[]{4, 8, 16},
+    BANK(0xffd900, 1, "bank", new int[]{8, 16, 30},
             new Requirements(12, 8, 12, KingdomLevels.BIG,
                     new BlockRequirement(Material.GOLD_BLOCK, 16),
                     new BlockRequirement(Material.LECTERN, 1),

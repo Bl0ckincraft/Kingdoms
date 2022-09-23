@@ -5,10 +5,10 @@ import java.util.Map;
 
 public enum KingdomLevels {
     NEW("new_kingdom", 1, 0),
-    LITTLE("little_kingdom", 2, 12),
-    BIG("big_kingdom", 3, 30),
-    RICH("rich_kingdom", 4, 55),
-    EMPIRE("empire", 5, 100);
+    LITTLE("little_kingdom", 2, 28),
+    BIG("big_kingdom", 3, 90),
+    RICH("rich_kingdom", 4, 220),
+    EMPIRE("empire", 5, 280);
 
     private static Map<Integer, KingdomLevels> levelByInt = new HashMap<>();
 

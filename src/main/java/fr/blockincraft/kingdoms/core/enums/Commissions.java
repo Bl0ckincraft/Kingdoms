@@ -7,21 +7,11 @@ import java.security.SecureRandom;
 import java.util.Arrays;
 
 public enum Commissions {
-    DIAMOND("diamond_collector", commissionsCompleted -> {
-        return 10 + commissionsCompleted * commissionsCompleted / 10;
-    }, Material.DIAMOND_ORE, Material.DEEPSLATE_DIAMOND_ORE),
-    GOLD("gold_collector", commissionsCompleted -> {
-        return 20 + commissionsCompleted * commissionsCompleted / 6;
-    }, Material.GOLD_ORE, Material.DEEPSLATE_GOLD_ORE),
-    IRON("iron_miner", commissionsCompleted -> {
-        return 30 + commissionsCompleted * commissionsCompleted / 4;
-    }, Material.IRON_ORE, Material.DEEPSLATE_IRON_ORE),
-    COAL("coal_miner", commissionsCompleted -> {
-        return 40 + commissionsCompleted * commissionsCompleted / 2;
-    }, Material.COAL_ORE, Material.DEEPSLATE_COAL_ORE),
-    ZOMBIE("zombie_killer", commissionsCompleted -> {
-        return 10 + commissionsCompleted * commissionsCompleted / 2;
-    }, EntityType.ZOMBIE);
+    CHICKEN("chicken_killer", commissionsCompleted -> 10 + commissionsCompleted * 5, EntityType.CHICKEN),
+    RABBIT("rabbit_killer", commissionsCompleted -> 20 + commissionsCompleted * 10, EntityType.RABBIT),
+    SKELETON("skeleton_killer", commissionsCompleted -> 30 + commissionsCompleted * 15, EntityType.SKELETON),
+    COW("cow_killer", commissionsCompleted -> 40 + commissionsCompleted * 20, EntityType.COW),
+    BLAZE("blaze_killer", commissionsCompleted -> 50 + commissionsCompleted * 25, EntityType.BLAZE);
 
     private static final SecureRandom random = new SecureRandom();
 

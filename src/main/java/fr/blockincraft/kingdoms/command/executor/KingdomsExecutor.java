@@ -1143,8 +1143,8 @@ public class KingdomsExecutor implements CommandExecutor {
                 int maxAmount = Parameters.maxMoneyPerBankLevel[kingdom.getBankLevel()];
                 if (amount + kingdom.getBank() > maxAmount) {
                     sender.sendMessage(ChatColor.translateAlternateColorCodes('&', Lang.BANK_CAN_ONLY_CONTAIN.get()
-                            .replace("%max_amount%", TextUtils.valueWithCommas(maxAmount))
-                            .replace("%current_amount%", TextUtils.valueWithCommas(kingdom.getBank())))
+                            .replace("<max_amount>", TextUtils.valueWithCommas(maxAmount))
+                            .replace("<current_amount>", TextUtils.valueWithCommas(kingdom.getBank())))
                             .split("\\|"));
                     return true;
                 }
@@ -1169,7 +1169,7 @@ public class KingdomsExecutor implements CommandExecutor {
 
                 registry.updateKingdom(kingdom);
                 sender.sendMessage(ChatColor.translateAlternateColorCodes('&', Lang.SUCCESS_DEPOSIT.get()
-                                .replace("%amount%", TextUtils.valueWithCommas(amount)))
+                                .replace("<amount>", TextUtils.valueWithCommas(amount)))
                         .split("\\|"));
                 return true;
             }
@@ -1231,7 +1231,7 @@ public class KingdomsExecutor implements CommandExecutor {
 
                 registry.updateKingdom(kingdom);
                 sender.sendMessage(ChatColor.translateAlternateColorCodes('&', Lang.SUCCESS_WITHDRAW.get()
-                                .replace("%amount%", TextUtils.valueWithCommas(amount)))
+                                .replace("<amount>", TextUtils.valueWithCommas(amount)))
                         .split("\\|"));
                 return true;
             }
@@ -1307,13 +1307,13 @@ public class KingdomsExecutor implements CommandExecutor {
                 registry.updateKingdom(kingdom);
                 if (maxAmount <= amount) {
                     sender.sendMessage(ChatColor.translateAlternateColorCodes('&', Lang.SUCCESS_CONSUME_AND_FINISH.get()
-                                    .replace("%amount%", TextUtils.valueWithCommas(amount - maxAmount))
-                                    .replace("%material%", material.name().toLowerCase(Locale.ROOT)))
+                                    .replace("<amount>", TextUtils.valueWithCommas(amount - maxAmount))
+                                    .replace("<material>", material.name().toLowerCase(Locale.ROOT)))
                             .split("\\|"));
                 } else {
                     sender.sendMessage(ChatColor.translateAlternateColorCodes('&', Lang.SUCCESS_CONSUME.get()
-                                    .replace("%amount%", TextUtils.valueWithCommas(amount))
-                                    .replace("%material%", material.name().toLowerCase(Locale.ROOT)))
+                                    .replace("<amount>", TextUtils.valueWithCommas(amount))
+                                    .replace("<material>", material.name().toLowerCase(Locale.ROOT)))
                             .split("\\|"));
                 }
                 return true;
