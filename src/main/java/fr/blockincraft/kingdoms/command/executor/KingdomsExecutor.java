@@ -1024,7 +1024,7 @@ public class KingdomsExecutor implements CommandExecutor {
                 try {
                     id = Long.parseLong(args[1]);
 
-                    if (id == 0) {
+                    if (id < 0) {
                         sender.sendMessage(ChatColor.translateAlternateColorCodes('&', Lang.INVALID_NUMBER.get())
                                 .split("\\|"));
                         return true;
